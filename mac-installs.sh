@@ -23,10 +23,10 @@ if test ! $(which brew); then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
-echo '# Set PATH, MANPATH, etc., for Homebrew.' >> /Users/vithyag/.zprofile
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/vithyag/.zprofile
+echo '# Set PATH, MANPATH, etc., for Homebrew.' >> "$basepath".zprofile
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> "$basepath".zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
-
+çç
 ###############################################################################
 # Install Apps                                                                #
 ###############################################################################
@@ -41,8 +41,8 @@ apps=(
   iterm2
   #miro
   # multipass
-  obs
-  postman
+  #obs
+  #postman
   # slack
   # sourcetree
   #visual-studio-code
@@ -71,13 +71,13 @@ brews=(
   #azure-cli
   docker
   docker-compose
-  git
+  #git
   #go
   #helm
   # hyperkit
   #k9s
   #kompose
-  #kubectx
+  #kubectx  
   #kubernetes-cli
   #mas
   # microk8s
@@ -91,6 +91,7 @@ brews=(
   #terragrunt
   #warrensbox/tap/tfswitch
   #tree
+  git-credential-manager
 )
 
 echo "installing brews ..."
@@ -138,7 +139,7 @@ done
 echo "Apply Git configs ..."
 cp ./dotfiles/.gitignore_global ~/.gitignore_global
 git config --global user.name "$name"
-git config --global user.email $email
+#git config --global user.email $email
 git config --global core.excludesfile ~/.gitignore_global
 
 ###############################################################################
