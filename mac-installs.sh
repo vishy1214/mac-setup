@@ -34,11 +34,11 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # Apps that are not in App Store but they are in brew
 apps=(
   #openjdk@8
-  appcleaner
+  #appcleaner
   #dbeaver-community
   #google-chrome
   #intellij-idea-ce
-  iterm2
+  #iterm2
   #miro
   # multipass
   #obs
@@ -91,7 +91,7 @@ brews=(
   #terragrunt
   #warrensbox/tap/tfswitch
   #tree
-  git-credential-manager
+  #git-credential-manager
 )
 
 echo "installing brews ..."
