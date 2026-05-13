@@ -11,7 +11,7 @@ source ./.settings
 ###############################################################################
 
 echo "Installing xcode-stuff ..."
-#xcode-select --install
+xcode-select --install
 
 ###############################################################################
 # Install Homebrew                                                            #
@@ -36,16 +36,16 @@ apps=(
   #openjdk@8
   #appcleaner
   #dbeaver-community
-  #google-chrome
+  google-chrome
   #intellij-idea-ce
-  #iterm2
+  iterm2
   #miro
   # multipass
   #obs
   #postman
   # slack
   # sourcetree
-  #visual-studio-code
+  visual-studio-code
   #whatsapp
   # zoom
 )

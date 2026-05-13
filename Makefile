@@ -1,4 +1,7 @@
 # Make file to help make this easy
+
+all: settings make-exec set-defaults install-apps
+
 settings:
 	cp settings_example .settings
 
