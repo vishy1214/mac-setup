@@ -19,6 +19,7 @@ apps=(
   #visual-studio-code
   #whatsapp
   # zoom
+  openclaw
 )
 
 # Install apps to /Applications

@@ -28,6 +28,7 @@ brews=(
   #warrensbox/tap/tfswitch
   #tree
   #git-credential-manager
+  node
 )
 
 echo "installing brews ..."

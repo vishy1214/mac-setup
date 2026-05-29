@@ -21,12 +21,12 @@ install-all:
 	./mac-install-appstore.sh
 	./mac-install-cli-apps.sh
 
-install-apps:
+apps:
 	./mac-install-apps.sh
 
-install-appstore':
+appstore':
 	./mac-install-appstore.sh
 
-install-cli-apps:
+cli-apps:
 	./mac-install-cli-apps.sh
 
